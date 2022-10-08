@@ -6,19 +6,31 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "eslint": "npx eslint '**/*.tsx' '**/*.ts'",
+    "stylelint": "npx stylelint '**/*.css' '**/*.scss'",
+    "lint": "yarn run eslint && yarn run stylelint",
+    "lint:fix": "yarn run eslint --fix && yarn run stylelint --fix",
+    "no-lock": "scripts/noPackageLock.sh"
   },
   "dependencies": {
+    "@react-three/fiber": "^8.8.9",
     "next": "12.3.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "three": "^0.145.0"
   },
   "devDependencies": {
     "@types/node": "18.8.3",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
-    "eslint": "8.25.0",
-    "eslint-config-next": "12.3.1",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "eslint": "^7.22.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-react": "^7.23.1",
+    "stylelint": "^13.12.0",
+    "stylelint-config-standard": "^21.0.0",
     "typescript": "4.8.4"
   }
 }
