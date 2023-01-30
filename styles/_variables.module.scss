@@ -1,0 +1,36 @@
+// FONTS
+$header-1: normal 600 64px 'Poppins', serif;
+$header-2: normal 400 48px 'Poppins', sans-serif;
+
+$body-xlarge: normal 600 32px 'Poppins', sans-serif;
+$body-large: normal 600 16px 'Poppins', sans-serif;
+$body: normal 400 16px 'Poppins', sans-serif;
+$body-small: normal 400 12px 'Poppins', sans-serif;
+
+$background: normal 600 128px 'Poppins', serif;
+
+// COLORS
+$colors: (
+  'black': #000,
+  'black-75': #000c,
+  'white': #fff,
+  'white-50': #fff7,
+  'white-25': #fff3,
+);
+
+// SPACING
+$nav-height: 80px;
+$nav-horiz-padding: 120px;
+
+$content-horiz-padding: 220px;
+
+$footer-horiz-padding: 120px;
+
+$button-horiz-padding: 24px;
+
+// Export to JS
+:export {
+  @each $key, $value in $colors {
+    #{unquote($key)}: $value;
+  }
+}

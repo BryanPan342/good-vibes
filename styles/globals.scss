@@ -1,0 +1,63 @@
+@use 'variables.module' as *;
+
+* {
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  padding: 0;
+  font: $body;
+  background-color: map-get($colors, 'white');
+}
+
+div {
+  color: map-get($colors, 'black');
+}
+
+h1 {
+  font: $header-1;
+}
+
+h2 {
+  font: $header-2;
+}
+
+h3 {
+  font: $body-large;
+  letter-spacing: 0.1em;
+}
+
+h4 {
+  font: $body-xlarge;
+  letter-spacing: 0.08em;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+button {
+  background-color: transparent;
+  font: $body-large;
+  letter-spacing: 0.1em;
+  color: map-get($colors, 'black');
+  // SIZING
+  padding: 4px $button-horiz-padding;
+  min-height: 32px;
+  // BORDER
+  border: 2px solid map-get($colors, 'black');
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#root {
+  height: 100%;
+  width: 100vw;
+  max-width: 1440px;
+  margin: 0 auto;
+}
