@@ -29,7 +29,7 @@ export default function Home(): JSX.Element {
         {/* <EffectComposer disableNormalPass>
           <Bloom luminanceThreshold={1} mipmapBlur />
         </EffectComposer> */}
-        <Environment background preset="dawn" blur={0.8} />
+        <Environment background preset="forest" blur={0.8} />
       </Scene>
     </Layout>
   );
@@ -39,7 +39,7 @@ function FloatStatue(props) {
   const glb = useGLTF('/float.glb');
   const {nodes, materials} = glb;
   return (
-    <group {...props}>
+    <group {...props} position={[0, 0, 0]}>
       <mesh
         castShadow
         receiveShadow

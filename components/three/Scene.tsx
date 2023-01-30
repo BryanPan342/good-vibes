@@ -12,7 +12,7 @@ export default function Scene({children}: Props): JSX.Element {
       <Canvas
         gl={{ logarithmicDepthBuffer: true }}
         shadows
-        camera={{ position: [-12, 0, 5], fov: 25 }}
+        camera={{ position: [-12, 2, 5], fov: 30 }}
         className={styles.canvas}
       >
         {children}
