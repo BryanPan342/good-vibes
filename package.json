@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
     "eslint": "npx eslint '**/*.tsx' '**/*.ts'",
     "stylelint": "npx stylelint '**/*.css' '**/*.scss'",
     "lint": "yarn run eslint && yarn run stylelint",
